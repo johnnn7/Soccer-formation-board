@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    margin: 0;
+    
+}
+
+.field {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #228B22; /* Green field */
+    border: 5px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Center Line */
+.center-line {
+    position: absolute;
+    width: 100%;          /* Full width of the field */
+    height: 2px;          /* Thin line */
+    background-color: white;
+    top: 50%;             /* Positioned at the vertical center */
+    transform: rotate(90deg)        /* Starts from the left edge */
+}
+
+/* Other field elements remain unchanged */
+
+/* Center Circle */
+.center-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Goal Areas */
+.goal-area {
+    position: absolute;
+    width: 60px;
+    height: 180px;
+    border: 2px solid white;
+}
+
+.left-goal {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.right-goal {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* Penalty Areas */
+.penalty-area {
+    position: absolute;
+    width: 120px;
+    height: 250px;
+    border: 2px solid white;
+}
+
+.left-penalty {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.right-penalty {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+/* Players */
+.player {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: black;
+    cursor: grab;
+}
